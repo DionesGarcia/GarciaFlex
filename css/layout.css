@@ -1,0 +1,72 @@
+/* Container de Agendamento Público */
+.app-container-public {
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+/* Títulos Seccionais */
+.section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: #FFF;
+}
+.section-title span {
+    color: var(--orange);
+}
+
+/* Estrutura das Configurações em 2 Colunas */
+.config-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.config-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.config-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.config-nav-link:hover {
+    background-color: var(--bg-surface);
+    color: #FFF;
+}
+
+.config-nav-link.active {
+    background-color: var(--bg-input);
+    color: var(--orange);
+    border-left: 3px solid var(--orange);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.config-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.config-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+@media(max-width: 768px) {
+    .config-layout { grid-template-columns: 1fr; gap: 20px; }
+}

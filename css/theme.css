@@ -1,0 +1,41 @@
+:root {
+    /* Cores de Fundo e Superfícies */
+    --bg-main: #090E17;
+    --bg-surface: #111723;
+    --bg-input: #171F30;
+    --border-color: #202B41;
+
+    /* Cores de Destaque e Status */
+    --orange: #E8500A;
+    --orange-hover: #C53D00;
+    --blue-tech: #2563EB;
+    --green-tech: #00C853;
+    --red-tech: #EF4444;
+
+    /* Tipografia */
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+
+    /* Arredondamentos e Transições */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    
+    --shadow-premium: 0 12px 40px -12px rgba(0,0,0,0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-main);
+    -webkit-font-smoothing: antialiased;
+}
